@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Receipt</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_bank">BankActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="title_activity_bank_main">BankMainActivity</string>
+    <string name="title_activity_bank_main_acivity">BankMainAcivity</string>
+    <string name="title_activity_bank_post">BankPostActivity</string>
+    <string name="title_activity_bank_view_receipts">BankViewReceiptsActivity</string>
+
+    <string name="bank_receipt">Choose category</string>
+
+    <string-array name="bank_receipts">
+        <item>Deposit</item>
+        <item>Withdrawal</item>
+    </string-array>
+    <string name="title_activity_single_bank_view">SingleBankView</string>
+
+    <string name="home_receipt">Choose category</string>
+    <string-array name="home_receipts">
+        <item>Maintainance and Repair</item>
+        <item>Telephone Utility</item>
+        <item>Water Utility</item>
+        <item>Power Utility</item>
+        <item>Rent</item>
+        <item>Entertainment</item>
+        <item></item>
+    </string-array>
+
+    <string name="title_activity_home_post_receipt">HomePostReceipt</string>
+    <string name="title_activity_home_receipts">HomeReceipts</string>
+    <string name="title_activity_home_receipt_single_view">HomeReceiptSingleView</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/faboptions_other"
+        android:icon="@mipmap/ic_add_white_24dp"
+        android:title="Other category" />
+
+    <item
+        android:id="@+id/faboptions_account"
+        android:icon="@mipmap/ic_account_circle_white_24dp"
+        android:title="Me" />
+
+    <item
+        android:id="@+id/faboptions_info"
+        android:icon="@mipmap/ic_info_white_24dp"
+        android:title="About us" />
+
+
+    <item
+        android:id="@+id/faboptions_share"
+        android:icon="@mipmap/ic_share_white_24dp"
+        android:title="Share" />
+</menu>

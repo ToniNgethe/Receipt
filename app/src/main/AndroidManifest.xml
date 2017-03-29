@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toni.receipt">
+
+    <!-- Accessing camera hardware -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeUi.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WelcomeUi.UserSetupActivity" />
+        <activity android:name=".WelcomeUi.LoginWithoutGoogleActivity" />
+        <activity android:name=".WelcomeUi.MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".BankUi.BankIntroActivity" />
+        <activity
+            android:name=".BankUi.BankPostActivity"
+            android:label="@string/title_activity_bank_post"
+            android:parentActivityName=".BankUi.BankIntroActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".BankUi.BankViewReceiptsActivity"
+            android:label="@string/title_activity_bank_view_receipts"
+            android:parentActivityName=".BankUi.BankIntroActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".BankUi.SingleBankView"
+            android:label="@string/title_activity_single_bank_view"
+            android:parentActivityName=".BankUi.BankViewReceiptsActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".HomeUi.HomeIntro" />
+        <activity
+            android:name=".HomeUi.HomePostReceipt"
+            android:label="@string/title_activity_home_post_receipt"
+            android:parentActivityName=".HomeUi.HomeIntro"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HomeUi.HomeReceipts"
+            android:label="@string/title_activity_home_receipts"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HomeUi.HomeReceiptSingleView"
+            android:label="@string/title_activity_home_receipt_single_view"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>
