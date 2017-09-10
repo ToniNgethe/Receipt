@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.toni.receipt">
+    package="com.toni.receipt">
 
     <!-- Accessing camera hardware -->
 
@@ -15,48 +15,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WelcomeUi.LoginActivity">
+        <activity android:name=".WelcomeUi.LoginActivity"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WelcomeUi.UserSetupActivity" />
-        <activity android:name=".WelcomeUi.LoginWithoutGoogleActivity" />
-        <activity android:name=".WelcomeUi.MainActivity" />
+        <activity android:name=".WelcomeUi.UserSetupActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".WelcomeUi.LoginWithoutGoogleActivity" android:configChanges="orientation|screenSize" />
+        <activity android:name=".WelcomeUi.MainActivity" android:configChanges="orientation|screenSize" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name=".BankUi.BankIntroActivity" />
+            android:theme="@style/Base.Theme.AppCompat"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".BankUi.BankIntroActivity"
+            android:configChanges="orientation|screenSize"/>
         <activity
             android:name=".BankUi.BankPostActivity"
             android:label="@string/title_activity_bank_post"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".BankUi.BankIntroActivity"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".BankUi.BankViewReceiptsActivity"
             android:label="@string/title_activity_bank_view_receipts"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".BankUi.BankIntroActivity"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".BankUi.SingleBankView"
             android:label="@string/title_activity_single_bank_view"
+            android:configChanges="orientation|screenSize"
             android:parentActivityName=".BankUi.BankViewReceiptsActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name=".HomeUi.HomeIntro" />
+        <activity android:name=".HomeUi.HomeIntro" android:configChanges="orientation|screenSize" />
         <activity
             android:name=".HomeUi.HomePostReceipt"
             android:label="@string/title_activity_home_post_receipt"
             android:parentActivityName=".HomeUi.HomeIntro"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".HomeUi.HomeReceipts"
             android:label="@string/title_activity_home_receipts"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".HomeUi.HomeReceiptSingleView"
             android:label="@string/title_activity_home_receipt_single_view"
+            android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme"></activity>
     </application>
 

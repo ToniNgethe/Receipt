@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/rc_big"
-    tools:context="com.example.toni.receipt.WelcomeUi.MainActivity">
+    tools:context="com.toni.receipt.WelcomeUi.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

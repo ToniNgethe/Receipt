@@ -13,11 +13,50 @@
       },
       "oauth_client": [
         {
-          "client_id": "673878041388-pqqqr42bndr8658dpbm29g68m26rqdol.apps.googleusercontent.com",
+          "client_id": "673878041388-c1l9pc34u89e71bqdqq4um9okjpjgqp6.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "673878041388-uvb5eimmr1v38ta1jjj8irlm89fj6enq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.toni.receipt",
             "certificate_hash": "90503486add17b4ac6170caf2b8574c52b409cb0"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPREN1-PiSrimOdUiWx3_8n9JceMjzfZc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673878041388:android:d5290472141a8665",
+        "android_client_info": {
+          "package_name": "com.toni.receipt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673878041388-8j6tlbdcik4pkiaksm94s2q3l75vjt0n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.toni.receipt",
+            "certificate_hash": "e14290c5d2b16261987d33b59ed77770f8713027"
           }
         },
         {

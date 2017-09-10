@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
-    tools:context="com.example.toni.receipt.WelcomeUi.LoginActivity">
+    tools:context="com.toni.receipt.WelcomeUi.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -32,7 +32,7 @@
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:padding="10dp"
-            android:text="My Receipts"
+            android:text="iReceipts"
             android:textColor="@color/colorAccent"
             android:textSize="24sp"
             android:textStyle="bold" />
