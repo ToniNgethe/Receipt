@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context="com.example.toni.receipt.BankUi.BankIntroActivity">
+    tools:context="com.toni.receipt.BankUi.BankIntroActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -45,7 +45,7 @@
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:padding="16dp"
-            android:text="My Bank Receipts"
+            android:text="@string/bank_ireceipts"
             android:textColor="@color/colorAccent"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -68,7 +68,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="You can view your receipts or add new ones."
+            android:text="@string/you_can_view_your_receipts_or_add_new_ones"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -93,7 +93,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/button"
-            android:text="Add receipt"
+            android:text="@string/add_receipt"
             android:textAllCaps="false" />
 
         <Button
@@ -104,7 +104,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/button2"
-            android:text="View my receipts"
+            android:text="@string/view_receipts"
             android:textAllCaps="false"
             android:textColor="@android:color/white" />
     </LinearLayout>

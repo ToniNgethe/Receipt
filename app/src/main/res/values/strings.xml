@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Receipt</string>
+    <string name="app_name">iReceipt</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -37,5 +37,9 @@
     <string name="title_activity_home_post_receipt">HomePostReceipt</string>
     <string name="title_activity_home_receipts">HomeReceipts</string>
     <string name="title_activity_home_receipt_single_view">HomeReceiptSingleView</string>
+    <string name="bank_ireceipts">Bank iReceipts</string>
+    <string name="view_receipts">View receipts</string>
+    <string name="add_receipt">Add receipt</string>
+    <string name="you_can_view_your_receipts_or_add_new_ones">You can view your receipts or add new ones.</string>
 
 </resources>
