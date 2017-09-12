@@ -4,31 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.toni.receipt.BankUi.BankPostActivity"
+    tools:context="com.toni.receipt.BankUi.BankPostActivity"
     tools:showIn="@layout/activity_bank_post">
 
-
-    <Button
-        android:id="@+id/btn_postbankrct_submit"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="344dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_weight="0.07"
-        android:gravity="center"
-        android:text="Submit"
-        android:textAllCaps="false"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -48,10 +28,11 @@
 
         <ImageView
             android:id="@+id/imgbtn_postbankreceipt_camera"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
             android:layout_alignParentBottom="true"
             android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
             android:cropToPadding="true"
@@ -59,89 +40,85 @@
             android:scaleType="centerCrop"
             app:srcCompat="@mipmap/add_btn" />
 
-        <android.support.v7.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:layout_weight="0.22">
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/et_postbankrect_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Receipt name"
+                android:inputType="textPersonName"
+                android:padding="14dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_postbankrect_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Receipt number"
+                android:inputType="number"
+                android:padding="14dp"
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:orientation="vertical"
-                android:weightSum="1">
+                android:orientation="horizontal"
+                android:paddingBottom="4dp">
 
                 <EditText
-                    android:id="@+id/et_postbankrect_name"
+                    android:id="@+id/et_postbankrect_total"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input"
-                    android:ems="10"
-                    android:hint="Receipt name"
-                    android:inputType="textPersonName"
-                    android:padding="14dp"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/et_postbankrect_number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
+                    android:layout_weight="1"
                     android:background="@drawable/input"
                     android:ems="10"
-                    android:hint="Receipt number"
+                    android:hint="Total amount"
                     android:inputType="number"
                     android:padding="14dp"
                     android:textSize="14sp" />
 
-                <LinearLayout
+                <Spinner
+                    android:id="@+id/spinner_bankpost_category"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:paddingBottom="4dp">
+                    android:layout_marginLeft="4dp"
 
-                    <EditText
-                        android:id="@+id/et_postbankrect_total"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/input"
-                        android:ems="10"
-                        android:hint="Total amount"
-                        android:inputType="number"
-                        android:padding="14dp"
-                        android:textSize="14sp" />
-
-                    <Spinner
-                        android:id="@+id/spinner_bankpost_category"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="4dp"
-
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:entries="@array/bank_receipts"
-                        android:prompt="@string/bank_receipt"/>
-                </LinearLayout>
-
-                <EditText
-                    android:id="@+id/et_postbankrect_desc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="0.29"
-                    android:background="@drawable/input"
-                    android:ems="10"
-                    android:hint="Description"
-                    android:inputType="textMultiLine"
-                    android:padding="14dp"
-                    android:textSize="14sp" />
-
+                    android:layout_weight="1"
+                    android:entries="@array/bank_receipts"
+                    android:padding="10dp"
+                    android:prompt="@string/bank_receipt" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+
+            <EditText
+                android:id="@+id/et_postbankrect_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.29"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:padding="14dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>
