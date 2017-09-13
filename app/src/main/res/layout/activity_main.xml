@@ -88,9 +88,10 @@
     <com.joaquimley.faboptions.FabOptions
         android:id="@+id/fab_options"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_height="92dp"
+        android:layout_gravity="bottom|center"
         app:button_menu="@menu/fab_items"
-        app:fab_color="@color/colorAccent" />
+        app:fab_color="@color/colorAccent"
+        tools:layout_editor_absoluteY="475dp" />
 
 </android.support.design.widget.CoordinatorLayout>
